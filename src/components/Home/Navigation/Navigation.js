@@ -5,12 +5,13 @@ import { Box } from '@chakra-ui/react'
 const Navigation = () => {
 
     return(
-        <Box>
+        <Box marginBottom={'5'}>
             <nav style={{textDecoration: 'none', backgroundColor: 'navy'}}>
                 <ul className="" style={{display: 'flex', justifyContent: 'space-evenly', listStyleType: 'none'}}>
                     <li><Link className="text-white font-bold" style={{textDecoration: 'none', textColor: 'white'}} to="/">Home</Link></li>
                     <li><Link className="text-white font-bold" style={{textDecoration: 'none', textColor: 'white'}} to="/about_me">About Me</Link></li>
                     <li><Link className="text-white font-bold" style={{textDecoration: 'none', textColor: 'white'}} to="/projects">Projects</Link></li>
+                    <li><Link className="text-white font-bold" style={{textDecoration: 'none', textColor: 'white'}} to="/login">Login</Link></li>
                 </ul>
             </nav>
             <Outlet />
