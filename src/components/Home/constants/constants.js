@@ -8,20 +8,20 @@ export const ProjectData1 = [
       githubUrl: 'https://github.com/ComputerScienceWarrior/job_search',
       imageUrl: JobSearch,
       websiteUrl: '',
-      videoDemoUrl: '',
+      videoDemoUrl: 'https://youtube.com',
     },
     { title: 'Math Skills', 
       languages: 'React Native', 
-      githubUrl: 'https://github.com/ComputerScienceWarrior/LearningManagementSystem',
+      githubUrl: 'https://github.com/ComputerScienceWarrior/math_skills',
       imageUrl: Math,
       websiteUrl: '',
-      videoDemoUrl: ''
+      videoDemoUrl: 'https://youtube.com'
     },
     { title: 'CRM', 
       languages: 'React JS, Ruby on Rails', 
-      githubUrl: 'https://github.com/ComputerScienceWarrior/CRM',
+      githubUrl: 'https://github.com/ComputerScienceWarrior/LearningToCode',
       imageUrl: CRM,
       websiteUrl: '',
-      videoDemoUrl: ''
+      videoDemoUrl: 'https://youtube.com'
     }
 ]
