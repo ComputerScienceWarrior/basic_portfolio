@@ -11,7 +11,7 @@ const Projects = () => {
             </Box>
             <Box display={'flex'} justifyContent={'space-evenly'}>
                 {ProjectData1.map((project, key) => {
-                    return <Project key={key} title={project.title} languages={project.languages} imageUrl={project.imageUrl} />
+                    return <Project key={key} title={project.title} languages={project.languages} imageUrl={project.imageUrl} videoDemoUrl={project.videoDemoUrl} githubUrl={project.githubUrl} />
                 })}
             </Box>
         </Box>
