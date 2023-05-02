@@ -4,6 +4,7 @@ import Projects from './components/Home/Projects/Projects'
 import Home from './components/Home/Home';
 import Resume from './components/Home/Resume/Resume';
 import Navigation from './components/Home/Navigation/Navigation';
+import Footer from './components/Home/Footer/Footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ChakraProvider } from '@chakra-ui/react'
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/resume" element={<Resume />}/>
         </Routes>
       </BrowserRouter>
+      <Footer />
     </ChakraProvider>
   );
 }
