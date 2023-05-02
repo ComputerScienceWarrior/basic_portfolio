@@ -13,7 +13,7 @@ const Project = (props) => {
                 <div>{props.websiteUrl}</div>
             </Box>
             <Box><Text maxH={'30px'} overflowY={'scroll'} bg={'black'} className="text-white font-bold text-xl text-center">{props.languages}</Text></Box>
-            <Box display={'flex'} justifyContent={'space-evenly'} bg={'white'} border={'solid'} borderWidth={'thin'}>
+            <Box p='5' display={'flex'} justifyContent={'space-evenly'} bg={'white'} border={'solid'} borderWidth={'thin'}>
                 <a href={props.videoDemoUrl} target="_blank">
                     <Image src={Youtube} w='1/2' h='35px' />
                 </a>
