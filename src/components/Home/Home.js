@@ -1,10 +1,11 @@
 import React from "react";
+import { Box } from "@chakra-ui/react"
 
 const Home = () => {
     return(
-        <div>
+        <Box>
             Home Page!
-        </div>
+        </Box>
     )
 }
 
