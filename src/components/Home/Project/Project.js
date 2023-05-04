@@ -9,7 +9,9 @@ const Project = (props) => {
         <Box bg={'gray.200'} w={'40'} h={'40'} m={'20'}>
             <Box>
                 <Text bg={'navy'} className="text-white text-center font-bold text-xl">{props.title}</Text>
-                <Image src={props.imageUrl} w='full' h='150px' />
+                <a href={`/projects/${props.id}`}>
+                    <Image src={props.imageUrl} w='full' h='150px' />
+                </a>
                 <div>{props.websiteUrl}</div>
             </Box>
             <Box><Text maxH={'30px'} overflowY={'scroll'} bg={'black'} className="text-white font-bold text-xl text-center">{props.languages}</Text></Box>
