@@ -1,6 +1,7 @@
 import './App.css';
 import AboutMe from './components/Home/AboutMe/AboutMe';
 import Projects from './components/Home/Projects/Projects'
+import ProjectShowPage from './components/Home/ProjectShowPage/ProjectShowPage';
 import Home from './components/Home/Home';
 import Resume from './components/Home/Resume/Resume';
 import Navigation from './components/Home/Navigation/Navigation';
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" index element={<Home />}/>
           <Route path="/about_me" element={<AboutMe />}/>
           <Route path="/projects" element={<Projects />}/>
+          <Route path="/projects/:id" element={<ProjectShowPage />}/>
           <Route path="/resume" element={<Resume />}/>
         </Routes>
       </BrowserRouter>
