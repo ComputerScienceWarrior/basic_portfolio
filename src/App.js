@@ -7,20 +7,22 @@ import Resume from './components/Home/Resume/Resume';
 import Navigation from './components/Home/Navigation/Navigation';
 import Footer from './components/Home/Footer/Footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, Box } from '@chakra-ui/react'
 
 function App() {
   return (
     <ChakraProvider>
       <BrowserRouter>
       <Navigation />
-        <Routes>
-          <Route path="/" index element={<Home />}/>
-          <Route path="/about_me" element={<AboutMe />}/>
-          <Route path="/projects" element={<Projects />}/>
-          <Route path="/projects/:id" element={<ProjectShowPage />}/>
-          <Route path="/resume" element={<Resume />}/>
-        </Routes>
+        <Box paddingX={'20'}>
+          <Routes>
+            <Route path="/" index element={<Home />}/>
+            <Route path="/about_me" element={<AboutMe />}/>
+            <Route path="/projects" element={<Projects />}/>
+            <Route path="/projects/:id" element={<ProjectShowPage />}/>
+            <Route path="/resume" element={<Resume />}/>
+          </Routes>
+        </Box>
       </BrowserRouter>
       <Footer />
     </ChakraProvider>
